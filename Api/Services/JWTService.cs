@@ -27,8 +27,7 @@ namespace Api.Services
                new Claim(ClaimTypes.NameIdentifier,user.Id),
                new Claim(ClaimTypes.Email,user.Email),
                new Claim(ClaimTypes.GivenName,user.FirstName),
-               new Claim(ClaimTypes.Surname,user.LastName),
-               new Claim("my own claim name","this is the value")
+               new Claim(ClaimTypes.Surname,user.LastName)
            };
 
             var creadentials = new SigningCredentials(_jwtKey, SecurityAlgorithms.HmacSha256Signature);
