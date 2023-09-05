@@ -1,0 +1,16 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\Api",
+    "\\Api\\Controllers",
+    "\\Api\\DTOs\\Account",
+    "\\ClientApp",
+    "\\ClientApp\\src",
+    "\\ClientApp\\src\\app",
+    "\\ClientApp\\src\\app\\account\\register",
+    "\\ClientApp\\src\\app\\shared\\models",
+    "\\ClientApp\\src\\environments"
+  ],
+  "SelectedNode": "\\Api\\Api.csproj",
+  "PreviewInSolutionExplorer": false
+}
