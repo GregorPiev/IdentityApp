@@ -3,8 +3,9 @@ import { AccountService } from '../account.service';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { SharedService } from '../../shared/shared.service';
 import { IResponse } from '../../shared/models/register';
-import { Router } from '@angular/router';
-import { Subscription } from 'rxjs';
+import { ActivatedRoute, Router } from '@angular/router';
+import { Subscription, take } from 'rxjs';
+import { IUser } from '../../shared/models/user';
 
 @Component({
   selector: 'app-register',
@@ -17,13 +18,24 @@ export class RegisterComponent implements OnInit, OnDestroy {
   submitted = false;
   errorMessages: string[] = [];
   registerSubscription!: Subscription;
+  returnUrl: string | null = null;
 
   constructor(
     private acountService: AccountService,
     private formBuilder: FormBuilder,
     private sharedService: SharedService,
-    private router: Router 
-  ) { }
+    private router: Router,
+    private activatedRoute: ActivatedRoute
+  ) {
+    this.acountService.user$.pipe(take(1))
+      .subscribe({
+        next: (user: IUser | null) => {
+          if (user) {
+            this.router.navigateByUrl('/');
+          }
+        }
+      });
+  }
 
   ngOnInit(): void {
     this.initilizeForm();

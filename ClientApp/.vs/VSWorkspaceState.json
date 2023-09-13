@@ -5,8 +5,12 @@
     "\\src\\app",
     "\\src\\app\\account",
     "\\src\\app\\account\\login",
-    "\\src\\app\\account\\register"
+    "\\src\\app\\account\\register",
+    "\\src\\app\\shared",
+    "\\src\\app\\shared\\components\\modals",
+    "\\src\\app\\shared\\components\\modals\\notifications",
+    "\\src\\app\\shared\\models"
   ],
-  "SelectedNode": "\\src\\app\\account\\account.module.ts",
+  "SelectedNode": "\\src\\app",
   "PreviewInSolutionExplorer": false
 }
