@@ -74,7 +74,7 @@ export class LoginComponent implements OnInit, OnDestroy {
           if (error.error.errors) {
             this.errorMessages = error.error.errors;
           } else {
-            this.errorMessages = [error.error];
+            this.errorMessages = [error.message];
           }
         }
       });

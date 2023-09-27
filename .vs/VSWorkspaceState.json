@@ -1,16 +1,16 @@
 {
   "ExpandedNodes": [
     "",
-    "\\Api",
     "\\Api\\Controllers",
-    "\\Api\\DTOs\\Account",
     "\\ClientApp",
     "\\ClientApp\\src",
     "\\ClientApp\\src\\app",
     "\\ClientApp\\src\\app\\account\\register",
-    "\\ClientApp\\src\\app\\shared\\models",
+    "\\ClientApp\\src\\app\\play",
+    "\\ClientApp\\src\\app\\shared",
+    "\\ClientApp\\src\\app\\shared\\interceptors",
     "\\ClientApp\\src\\environments"
   ],
-  "SelectedNode": "\\Api\\Api.csproj",
+  "SelectedNode": "\\ClientApp\\src\\app\\play\\play.component.ts",
   "PreviewInSolutionExplorer": false
 }
